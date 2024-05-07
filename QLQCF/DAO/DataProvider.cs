@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace QLQCF.DAO
 {
@@ -24,8 +25,8 @@ namespace QLQCF.DAO
         private DataProvider() { }
 
         //private string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=QuanLyQuanCafeGKMoi;Integrated Security=True";
-        private string connectionSTR = @"Data Source=DESKTOP-T8LIS12\MSSQLSERVER01;Initial Catalog=QuanLyQuanCafeGKMoi;Integrated Security=True";
-
+        //private string connectionSTR = @"Server=DESKTOP-RRE1BB0;Database=QuanLyQuanCafeGKMoi;User ID = 123; pwd=1234";
+        private string connectionSTR = @"Data Source=DESKTOP-RRE1BB0;Initial Catalog=QuanLyQuanCafeGKMoi;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null) //trả về bảng dữ liệu
         {
